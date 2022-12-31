@@ -1,0 +1,292 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* list-style: none; */
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    background-image:url(./heroBG.png) ;
+     background-size:cover  ; 
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<nav bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.nb {
+    position: fixed;
+    z-index: 4;
+}
+
+.navbar {
+    background-color:rgb(255, 166, 0);
+    height: 100vh; ;
+    width: 200px;
+    position: fixed;
+    display: none;
+} 
+
+.navbar ul {
+    
+}
+
+.navbar li{
+    padding: 20px;
+    
+    
+   
+}
+
+.navbar li a{ 
+    color: black;
+    font-weight: bold;
+    
+    margin: 20px;
+    
+}
+
+.navbar li:hover{
+    background-color:rgba(255, 251, 244, 0.558) ;
+    cursor: pointer;
+}
+.navbtnopen {
+    background-color: orange;
+    border: 1pt solid black;
+    padding: 8px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.navbtnopen:hover {
+    background-color:#f6f6f8 ;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+.navbtnclose {
+    background-color: #f6f6f8;
+    border: 1pt solid black;
+    padding: 8px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    right: 202px;
+    display: none;
+}
+
+.navbtnclose:hover {
+    background-color:orange ;
+    transition: 1s;
+    cursor: pointer;
+}
+.z1 {
+    background-color: rgba(0, 0, 0, 0.164);
+    width: 100%;
+    height: inherit;
+    z-index: 3;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< hero >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.hero {
+    
+     height: 100vh;
+     width: 100%;
+     /* position: relative; */
+     text-align: center;
+}
+   
+
+.logo {
+    height: 135px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform:translateX(-50%)
+
+}
+
+.herobtn {
+    position: absolute;
+    top: 400px;
+    left: 43% ;
+}
+
+.herobtn a {
+    color: black;
+    font-size: 20px;
+    background-color: #f6f6f8;
+    border-radius:15px;
+    border: .5px solid rgb(255, 202, 103);
+    padding:5px  30px ;
+    margin: 30px;
+    display: block;
+}
+.herobtn a:hover {
+    background-color:rgb(255, 251, 244) ;
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 1px solid darkorange;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< setion 1 >>>>>>>>>>>>>>>>>>>>>> */
+
+
+.about {
+    background-color:  #efefef;
+}
+
+.about h2 {
+    color: darkorange;
+    font-weight: bold; 
+    font-size: 60px;
+}
+.about h1 {
+    font-weight: bold;
+    color: #000000;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.about span {
+    color: orange;
+
+}
+.about p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.aboutdiv {
+    margin-right: 40px;
+    margin-left: 450px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.gear {
+    width: 400px;
+    position: absolute;
+    left: 0px;
+    top: 805px;
+    left: 20px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<< section 2 >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.services {
+    padding-top: 100px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+    
+}
+
+.services i{
+    margin-left: 10px;
+    color: orange;
+    
+}
+.services h2 {
+    
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.services h2:hover{
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(1);
+    cursor: pointer;
+}
+
+.services h3 {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.services p {
+
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.servicesdiv {
+    margin-left: 650px;
+}
+
+.sec2 {
+    height: 600px;
+    display: inline-block;
+    position: absolute;
+    top: 1450px;
+    left: 20px;
+    transition: 0.5s;
+    z-index: 2;
+
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, END >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.hr1
+{
+    width: 75%;
+    height: 4px;
+    margin: auto;
+}
+
+.end {
+    margin-right: 20px;
+    display: flex;
+
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    /* background-color: #efefef; */
+    margin-top:150px;  
+    margin-left: auto;
+    padding-bottom: 40px;
+    margin-right: auto;
+    
+    /* border: 1px solid black; */
+    border-radius: 21px;
+    list-style: circle;
+}
+
+.card li {
+    margin: 30px 0px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, index >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.index {
+    background-color: rgba(0, 0, 0, 0.392);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    display: none;
+}
+
+
+
+
+
